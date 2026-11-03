@@ -1,8 +1,10 @@
--- Patch34
--- Delete Nearest Marker to Cursor
--- Deletes the marker (not region) closest to the edit cursor by absolute distance.
---
--- https://github.com/patch-34
+-- @description Delete Nearest Marker to Cursor
+-- @version 1.0.0
+-- @author Aleksei Vorobev / Patch34
+-- @link
+--   GitHub repository https://github.com/patch-34/delete-nearest-marker-to-cursor
+-- @about
+--   Deletes the marker closest to the edit cursor by absolute timeline distance. Regions are ignored.
 
 local function main()
   local cursor_pos = reaper.GetCursorPosition()
